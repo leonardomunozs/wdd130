@@ -76,7 +76,7 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* History Section */
+
 .history {
     margin: 2rem 0;
 }
@@ -98,7 +98,7 @@ nav a:hover {
     border-radius: 8px;
 }
 
-/* Adventure Section */
+
 .adventure {
     text-align: center;
 }
@@ -129,7 +129,7 @@ figure figcaption {
     color: var(--text-color);
 }
 
-/* Footer */
+
 footer {
     text-align: center;
     margin-top: 2rem;
