@@ -5,10 +5,13 @@
     --background-color: #ced5e3;
     --white: #ffffff;
     --margin-global: 20px;
+    --highlight-color: #f2f2f2;
+    --button-color: #0a66c2;
+    --button-hover-color: #044f9e;
 }
 
 body {
-    font-family: "Average Sans", "Roboto Flex", Arial, sans-serif;
+    font-family: "Average Sans", "Roboto Flex";
     color: var(--text-color);
     background-color: var(--background-color);
     margin: 0;
@@ -16,7 +19,6 @@ body {
     max-width: 1200px;
     margin: auto;
 }
-
 
 header {
     display: grid;
@@ -47,7 +49,6 @@ nav a:hover {
     text-decoration: underline;
 }
 
-
 .hero {
     margin: 2rem 0;
 }
@@ -76,7 +77,6 @@ nav a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
 .history {
     margin: 2rem 0;
 }
@@ -97,7 +97,6 @@ nav a:hover {
     width: 100%;
     border-radius: 8px;
 }
-
 
 .adventure {
     text-align: center;
@@ -129,6 +128,125 @@ figure figcaption {
     color: var(--text-color);
 }
 
+.contact {
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: var(--highlight-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-info iframe {
+    width: 100%;
+    height: 300px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.employee-profiles {
+    display: grid;
+    grid-auto-columns: auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 5rem;
+    margin: 2rem 0;
+}
+
+.employee-profiles .profiles {
+    display: contents;
+}
+
+.employee-profiles h2 {
+    text-align: center;
+    width: 100%;
+    grid-column: 1 / -1;
+    margin-bottom: 1rem;
+}
+
+.employee-photos {
+    text-align: center;
+    max-width: 250px;
+}
+
+.employee-photos img {
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.employee-photos figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.contact-form input[type="checkbox"] {
+    vertical-align: middle;
+    margin-right: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--text-color);
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.contact-form input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+.contact-form .newsletter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-form .newsletter label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.contact-form button {
+    background-color: var(--button-color);
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: var(--button-hover-color);
+}
 
 footer {
     text-align: center;
@@ -160,7 +278,12 @@ footer .social-links img {
         grid-template-columns: 1fr;
     }
 
+    .employee-profiles {
+        grid-template-columns: 1fr;
+    }
+
     nav {
         flex-direction: column;
     }
 }
+
